@@ -1,0 +1,9 @@
+function selectPlayers(array) {
+let res = []
+for (const el of array){
+    if(el>=6) res.push(el);
+}
+res.sort((a,b)=>b-a);
+return res
+
+}
