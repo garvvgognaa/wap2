@@ -7,3 +7,4 @@ res.sort((a,b)=>b-a);
 return res
 
 }
+console.log(res)
