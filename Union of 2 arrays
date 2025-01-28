@@ -1,0 +1,8 @@
+function findUnion(arr1, arr2) {
+    arr2.forEach(cur=>{
+        if(!arr1.includes(cur)){
+            arr1.push(cur);
+        }
+    })
+    arr1.sort((a,b)=>a-b);
+}
