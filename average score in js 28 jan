@@ -1,0 +1,6 @@
+function analyzeScores(scores) {
+    let filteredarray = scores.filter(element => element>=50);
+    let sum = filteredarray.reduce((acum,curr)=>acum+curr, 0);
+    let avg = filteredarray.length>0 ? sum/filteredarray.length : 0;
+    return avg
+}
