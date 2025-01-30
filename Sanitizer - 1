@@ -1,0 +1,21 @@
+return function sanitizer(arr) {
+      return arr.map(obj => {
+    let newObj = {};
+    for (let key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        newObj[snakeToCamel(key)] = obj[key];
+      }
+    }
+    return newObj;
+  });
+}
+function snakeToCamel(snakeStr) {
+  const words = snakeStr.split("_");
+  return (
+    words[0] +
+    words
+      .slice(1)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join("")
+  );
+}
