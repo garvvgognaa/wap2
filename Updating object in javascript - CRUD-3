@@ -1,0 +1,5 @@
+function updateKeyUsingNewObject(obj, keyToUpdate, newValue) {
+   // write your code here
+    obj[keyToUpdate] = newValue
+    return obj 
+}
