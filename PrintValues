@@ -1,0 +1,7 @@
+function printValues(obj) {
+    Object.values(obj).forEach(value => {
+        if (value > 50) {
+            console.log(value);
+        }
+    });
+}
