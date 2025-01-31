@@ -1,0 +1,7 @@
+function getValueFromJSON(objectString, key) {
+    const data = JSON.parse(objectString);
+    return data[key];
+}
+const jsonString = '{"id":"123","name":"Alice","role":"Admin"}';
+const key = "name";
+
