@@ -1,0 +1,11 @@
+const createUserProfile = (id, name, age, passion, gender) => {
+    const person = {};
+
+    if (id) person.id = id;
+    if (name) person.name = name;
+    if (age) person.age = age;
+    if (passion) person.passion = passion;
+    if (gender) person.gender = gender;
+
+    return person;
+};
