@@ -1,0 +1,3 @@
+function isDivisible(dividend, divisor) {
+    return (dividend/divisor) | 0;
+}
