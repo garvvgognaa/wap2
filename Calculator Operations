@@ -1,0 +1,9 @@
+// Your code here
+function doubleResult(func){
+    return function(x){
+        return func(x)*2;
+    }
+}
+function addFive(num){
+    return num+5
+}
