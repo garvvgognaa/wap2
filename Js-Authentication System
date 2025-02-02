@@ -1,0 +1,7 @@
+function authenticateUser(username, callback, users) {
+  if (users.includes(username)){
+    callback(true);
+  } else {
+    callback(false);
+  }
+}
