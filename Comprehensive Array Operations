@@ -1,0 +1,7 @@
+function arrayOperations(numbers, names, targetName, targetNumber) {
+  let firstEven = numbers.find((num)=> num %2===0 | null);
+  let nameindex = names.findIndex(name => name === targetName);
+  let presence = numbers.includes(targetNumber);
+
+  return firstEven + nameindex + presence;
+}
