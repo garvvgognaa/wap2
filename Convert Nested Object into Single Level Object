@@ -1,0 +1,13 @@
+let resultObj = {};
+function flatTheObj(obj, parent) {
+    // Write your code here
+    for (const i in obj){
+        if(typeof obj[i]==="string"){ 
+            resultObj[`${parent}_${i}`] = obj[i]
+        }
+        else{
+            flatTheObj(obj[i],`${parent}_${i}`)
+        }
+    }
+    return resultObj
+}
