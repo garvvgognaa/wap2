@@ -1,0 +1,10 @@
+function findCode(students, selectedStudents) {
+    let code = '';
+    for (let student of selectedStudents) {
+        if (students.includes(student)) {
+            code += student[0].toUpperCase();
+        }
+    }
+
+    return code;
+}
