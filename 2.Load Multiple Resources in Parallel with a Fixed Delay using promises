@@ -1,0 +1,17 @@
+function loadMultipleResources(resourceIds) {
+    function loadResource(resourceId) {
+        return new Promise((resolve, reject) => {
+            if (typeof resourceId !== 'number' || resourceId <= 0 || resourceId > 1000 || isNaN(resourceId)) {
+                reject(`Invalid resource ID ${resourceId}`);
+            } else {
+                setTimeout(() => {
+                    resolve(`Resource ${resourceId} loaded`);
+                }, 1000);
+            }
+        });
+    }
+
+    return Promise.all(resourceIds.map(loadResource))
+        .then(results => results)
+        .catch(error => Promise.reject(error));
+}
