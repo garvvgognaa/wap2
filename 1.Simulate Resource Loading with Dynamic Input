@@ -1,0 +1,13 @@
+function loadResource(resourceId) {
+  
+  return new Promise ( (reject,resolve)=>{
+    if (resourceId>=1 && resourceId<=1000){
+      setTimeout(()=>{
+        resolve("Resource loaded successfully")
+      },2000)
+    }
+    else{
+      reject("Invalid resource ID")
+    }
+  })
+}
